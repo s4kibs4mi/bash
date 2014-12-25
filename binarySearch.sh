@@ -9,6 +9,7 @@ do
 	((x++))
 done
 
+# Sorting data using selection sort
 for((i = 0; i < x; i++))
 do
 	min=$i
@@ -26,6 +27,7 @@ done
 echo "Sorted array :" ${elements[*]}
 echo  "Key =" $key
 
+# Searching data using binary search
 found=0
 left=0
 while [ $left -le $x ]
