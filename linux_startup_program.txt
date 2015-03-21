@@ -1,0 +1,10 @@
+sudo touch /etc/init.d/ServerStarter
+sudo chmod +x /etc/init.d/ServerStarter
+nano /etc/init.d/ServerStarter
+
+
+#!/bin/bash
+cd /opt/clientWork && java FileReceiver &
+
+
+sudo update-rc.d ServerStarter defaults
